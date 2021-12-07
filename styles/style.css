@@ -1,0 +1,141 @@
+.creative__crew-body {
+  width: 990px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+/* HEADER */
+
+.creative__crew-header {
+  display: flex;
+}
+
+.creative__crew-header-title {
+  font-family: "PT Serif", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 71px;
+  width: 50vw;
+}
+
+.creative__crew-header-paragraph-container {
+  font-family: "Poppins", sans-serif;
+  width: 670px;
+}
+
+.creative__crew-header-first-paragraph {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 27px;
+  margin: 38px 0px 12px 0px;
+}
+
+.creative__crew-header-second-paragraph {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+/* CONTENT */
+.creative__crew-section-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+}
+
+.creative__crew-section-card-picture {
+  width: 238px;
+}
+
+.creative__crew-section-card-role {
+  font-family: "PT Serif", serif;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-left: 6px;
+}
+
+.creative__crew-section-card-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.creative__section-card-display,
+.creative__section-card-display-alt {
+  display: flex;
+}
+
+.creative__crew-section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.creative__section-card-display:nth-child(2),
+.creative__section-card-display:nth-child(5) {
+  margin-top: 76px;
+}
+
+/* FOOTER */
+
+.creative__crew-footer {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 134px;
+}
+
+.creative__crew-footer-span {
+  font-weight: bold;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 750px) {
+  .creative__crew-body {
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* HEADER */
+
+  .creative__crew-header {
+    display: block;
+  }
+
+  .creative__crew-header-title {
+    font-family: "PT Serif", serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 71px;
+  }
+
+  .creative__crew-header-paragraph-container {
+    width: 100%;
+  }
+
+  /* DISPLAY CARDS */
+  .creative__crew-section-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 36px;
+  }
+
+  .creative__section-card-display {
+    margin-top: 38px;
+  }
+
+  .creative__section-card-display:nth-child(2n) {
+    margin-top: 76px;
+  }
+
+  .creative__crew-section-card-picture {
+    width: 138px;
+  }
+}
